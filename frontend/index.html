@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fleet Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Login Page -->
+  <div id="loginPage" class="page active">
+    <div class="login-container">
+      <h1>🚚 Fleet Management</h1>
+      <form id="loginForm">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+      <div id="loginError" class="error"></div>
+      <div class="demo-creds">
+        <small>Demo: admin/admin123 | dispatcher/dispatch123 | driver1/driver123</small>
+      </div>
+    </div>
+  </div>
+
+  <!-- Admin Dashboard -->
+  <div id="adminDashboard" class="page">
+    <nav class="navbar">
+      <h2>Admin Dashboard</h2>
+      <button onclick="logout()">Logout</button>
+    </nav>
+    <div class="tabs">
+      <button class="tab active" onclick="showTab('overview')">Overview</button>
+      <button class="tab" onclick="showTab('trucks')">Trucks</button>
+      <button class="tab" onclick="showTab('drivers')">Drivers</button>
+      <button class="tab" onclick="showTab('trips')">Trips</button>
+      <button class="tab" onclick="showTab('maintenance')">Maintenance</button>
+      <button class="tab" onclick="showTab('payments')">Payments</button>
+      <button class="tab" onclick="showTab('analytics')">Analytics</button>
+    </div>
+    <div id="adminContent"></div>
+  </div>
+
+  <!-- Dispatcher Dashboard -->
+  <div id="dispatcherDashboard" class="page">
+    <nav class="navbar">
+      <h2>Dispatcher Panel</h2>
+      <button onclick="logout()">Logout</button>
+    </nav>
+    <div class="tabs">
+      <button class="tab active" onclick="showTab('assign-trip')">Assign Trip</button>
+      <button class="tab" onclick="showTab('trips')">All Trips</button>
+      <button class="tab" onclick="showTab('fleet-status')">Fleet Status</button>
+    </div>
+    <div id="dispatcherContent"></div>
+  </div>
+
+  <!-- Driver Dashboard -->
+  <div id="driverDashboard" class="page">
+    <nav class="navbar">
+      <h2>Driver Panel</h2>
+      <button onclick="logout()">Logout</button>
+    </nav>
+    <div class="tabs">
+      <button class="tab active" onclick="showTab('my-trips')">My Trips</button>
+      <button class="tab" onclick="showTab('payments')">Payments</button>
+      <button class="tab" onclick="showTab('documents')">Documents</button>
+      <button class="tab" onclick="showTab('leave')">Leave Request</button>
+    </div>
+    <div id="driverContent"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
