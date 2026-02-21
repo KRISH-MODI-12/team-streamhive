@@ -1,5 +1,17 @@
 https://1drv.ms/v/c/f83537bab9a9d2af/IQD_ifGr_j9QRZLoihGUTdpcAX2Esxm-sz85Q5hym6494r0?e=3g74Fv - streamhive video presentation 
 
+http://localhost:3000
+
+admin data(USERNAME)-  admin 
+      password - admin123
+
+driver data- driver1
+       password - driver123  
+
+dispatch data- dispatcher 
+       password - dispatch123     
+
+       
 ### 🔐 Authentication & Roles
 - Secure JWT-based authentication
 - Three roles: Admin, Dispatcher, Driver
