@@ -1,8 +1,4 @@
-# 🚚 Fleet Management System
-
-A full-stack web application for managing transport logistics, fleet availability, trip assignments, driver payments, and maintenance schedules.
-
-## Features
+https://1drv.ms/v/c/f83537bab9a9d2af/IQD_ifGr_j9QRZLoihGUTdpcAX2Esxm-sz85Q5hym6494r0?e=3g74Fv - streamhive video presentation 
 
 ### 🔐 Authentication & Roles
 - Secure JWT-based authentication
